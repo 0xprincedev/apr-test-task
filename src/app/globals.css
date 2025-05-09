@@ -1,0 +1,13 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-border: #efeff4;
+}
+
+body {
+  @apply bg-[#F9F9FB] text-[#333335];
+}
+
+h2 {
+  @apply text-[15px] leading-[1.2] font-medium;
+}
