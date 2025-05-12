@@ -52,7 +52,7 @@ export default function PairMetricsPage() {
       <div className='mt-2 flex flex-col gap-1 sm:flex-row sm:items-center'>
         <input
           type='datetime-local'
-          className='border-border w-fit rounded border bg-white px-2 py-1 text-sm sm:w-full'
+          className='border-border w-fit rounded border bg-white px-2 py-1 text-sm'
           value={dateRange.startDate}
           onChange={(e) =>
             setDateRange((prev) => ({ startDate: e.target.value, endDate: prev.endDate }))
@@ -61,7 +61,7 @@ export default function PairMetricsPage() {
         <span className='hidden sm:block'>{' ~ '}</span>
         <input
           type='datetime-local'
-          className='border-border w-fit rounded border bg-white px-2 py-1 text-sm sm:w-full'
+          className='border-border w-fit rounded border bg-white px-2 py-1 text-sm'
           value={dateRange.endDate}
           onChange={(e) =>
             setDateRange((prev) => ({
