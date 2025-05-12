@@ -13,6 +13,7 @@ import {
   YAxis,
 } from 'recharts'
 import { twMerge } from 'tailwind-merge'
+import { months, pairs } from '@/config/constants'
 import { API_URL } from '@/config/env'
 
 type Props = {
@@ -23,17 +24,6 @@ const buttons = [
   { label: '1h', value: 1 },
   { label: '12h', value: 12 },
   { label: '24h', value: 24 },
-]
-
-const pairs = [
-  {
-    address: '0xbc9d21652cca70f54351e3fb982c6b5dbe992a22',
-    name: 'WETH-RKFL',
-  },
-  {
-    address: '0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc',
-    name: 'WETH-USDC',
-  },
 ]
 
 const AprChart: React.FC<Props> = ({ className }) => {

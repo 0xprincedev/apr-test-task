@@ -1,6 +1,7 @@
 'use client'
 
 import { PropsWithChildren } from 'react'
+import { Toaster } from 'react-hot-toast'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import Header from '@/components/layouts/header'
 import Sidebar from '@/components/layouts/sidebar'
@@ -15,6 +16,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
         <Header />
         {children}
       </div>
+      <Toaster />
     </QueryClientProvider>
   )
 }
